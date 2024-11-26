@@ -34,7 +34,7 @@ go run main.go
 ```
 > O servidor estará disponível em http://localhost:8080/. Você pode testar as funcionalidades de rate limiting enviando requisições HTTP. Aqui estão alguns exemplos de como você pode fazer isso:
 
-* Teste com curl:
+### Teste com curl:
 ```shell script
 curl --location 'http://localhost:8080/' \
 --header 'X-User-ID: my-user' \
@@ -46,14 +46,12 @@ curl --location 'http://localhost:8080/' \
 * Teste com Ferramenta de API (Postman, Insomnia, etc):
 Envie requisições GET para http://localhost:8080/ e observe o comportamento do Rate Limiter.
 
-Passo 5: Parar o Servidor
+* Parar o Servidor
 Para parar o servidor, pressione Ctrl+C no terminal onde o servidor está rodando.
 
-Como Funciona
-O Rate Limiter utiliza um sistema de controle de requisições baseado em uma chave identificadora (como o IP do cliente ou o token API_KEY). Ele conta o número de requisições feitas dentro de um período de tempo e bloqueia o cliente por um tempo configurado após atingir o limite.
+### Como Funciona
 
-Configuração do Rate Limiter
-O Rate Limiter pode ser configurado na inicialização do servidor. Aqui está um exemplo de como você pode configurar o limitador no código:
+O Rate Limiter utiliza um sistema de controle de requisições baseado em uma chave identificadora (como o IP do cliente ou o token API_KEY). Ele conta o número de requisições feitas dentro de um período de tempo e bloqueia o cliente por um tempo configurado após atingir o limite.
 
 ## Estrutura do Projeto
 A estrutura do projeto é organizada da seguinte forma:
