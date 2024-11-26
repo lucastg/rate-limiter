@@ -75,7 +75,7 @@ rate-limiter/
 │       ├── persistence.go
 │       └── persistence_test.go     # Testes para a persistência
 ├── docker-compose.yml   
-├── go.mod                 # Dependências do Go
+├── go.mod                          # Dependências do Go
 └── README.md           
 ```
 
