@@ -3,6 +3,7 @@ module github.com/lucastg/rate-limiter
 go 1.23.2
 
 require (
+	github.com/go-redis/redismock/v9 v9.2.0
 	github.com/gorilla/mux v1.8.1
 	github.com/joho/godotenv v1.5.1
 	github.com/redis/go-redis/v9 v9.7.0

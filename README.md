@@ -32,11 +32,12 @@ go mod tidy
 ```shell script
 go run main.go
 ```
-> O servidor estará disponível em http://localhost:8080. Você pode testar as funcionalidades de rate limiting enviando requisições HTTP. Aqui estão alguns exemplos de como você pode fazer isso:
+> O servidor estará disponível em http://localhost:8080/. Você pode testar as funcionalidades de rate limiting enviando requisições HTTP. Aqui estão alguns exemplos de como você pode fazer isso:
 
 * Teste com curl:
 ```shell script
 curl --location 'http://localhost:8080/' \
+--header 'X-User-ID: my-user' \
 --header 'API_KEY: my-token'
 ```
 
