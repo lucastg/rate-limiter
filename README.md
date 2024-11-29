@@ -15,7 +15,7 @@ Siga os passos abaixo para executar o Rate Limiter localmente.
 
 * Clone o repositório para o seu ambiente local:
 ```shell script
-git clone https://github.com/seu-usuario/rate-limiter.git
+https://github.com/lucastg/rate-limiter.git
 ```
 ```shell script
 cd rate-limiter/cmd
